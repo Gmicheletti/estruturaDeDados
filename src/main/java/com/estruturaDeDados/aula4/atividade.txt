@@ -1,0 +1,5 @@
+1. Implemente uma função de inserção que mantenha a lista sempre ordenada.
+
+2. Implemente uma função para retornar o valor do antecessor de um elemento.
+
+3. Implemente um função para retornar o valor do sucessor de um elemento.
