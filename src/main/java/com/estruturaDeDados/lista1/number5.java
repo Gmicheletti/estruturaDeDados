@@ -21,7 +21,7 @@ public class number5 {
         }else{
             int a = 0;
             int b = 1;
-            for (int i = 3; i<= input; i++){
+            for (int i = 2; i<= input; i++){
                 int temp = b;
                 b = a + b;
                 a = temp;
