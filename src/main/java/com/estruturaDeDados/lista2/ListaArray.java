@@ -12,10 +12,10 @@ public class ListaArray {
     public void insereInicio(int v){
         if(this.ultimo == -1){
             vetor[0] = v;
+            ultimo++;
         } else{
-            for(int i = ultimo; i < 0; i++){
+            for(int i = ultimo; i >= 0; i--){
                 vetor[i+1] = vetor[i];
-                ultimo++;
 
                 if(ultimo == vetor.length){
                     int[] aux = new int[vetor.length];
@@ -24,8 +24,23 @@ public class ListaArray {
                     }
                     this.vetor = new int[vetor.length * 2];
                 }
+
             }
+
             vetor[0] = v;
         }
     }
+
+    public int removeP(int pos){
+        if(pos > ultimo || pos < 0){
+//            ERRO
+        }else{
+            int aux = vetor[pos];
+            vetor[pos] = 0;
+        }
+        return pos;
+    }
+
 }
+
+
