@@ -32,13 +32,16 @@ public class ListaArray {
     }
 
     public int removeP(int pos){
+        int aux = vetor[pos];
         if(pos > ultimo || pos < 0){
 //            ERRO
         }else{
-            int aux = vetor[pos];
-            vetor[pos] = 0;
+
+            for(int i = pos; i < ultimo; i++){
+                vetor[i] = vetor[i+1];
+            }
         }
-        return pos;
+        return aux;
     }
 
 }
