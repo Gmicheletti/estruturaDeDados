@@ -1,4 +1,4 @@
-package com.estruturaDeDados.aula1;
+package com.estruturaDeDados.aulas.aula1;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;

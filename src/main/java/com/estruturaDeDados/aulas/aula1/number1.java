@@ -1,4 +1,4 @@
-package com.estruturaDeDados.aula1;
+package com.estruturaDeDados.aulas.aula1;
 
 public class number1 {
 
