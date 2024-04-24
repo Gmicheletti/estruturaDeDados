@@ -15,8 +15,6 @@ public class ListaEncadeada {
         nodo.prox = inicio;
         inicio = nodo;
         tamanho++;
-        System.out.println();
-        System.out.println("tamanho: " + tamanho);
     }
     public void inserirFim(int val){
         Nodo nodo = new Nodo();
@@ -33,8 +31,6 @@ public class ListaEncadeada {
             nodo.prox = null;
         }
         tamanho++;
-        System.out.println();
-        System.out.println("tamanho: " + tamanho);
     }
     public void inserirPosicao(int index, int val){
         if(index <= 0){
@@ -51,8 +47,6 @@ public class ListaEncadeada {
             nodo.prox = aux.prox;
             aux.prox = nodo;
             tamanho++;
-            System.out.println();
-            System.out.println("tamanho: " + tamanho);
         }
     }
 
@@ -98,10 +92,23 @@ public class ListaEncadeada {
 
     }
     public int removerElemento(int elemento){
+        if(inicio == null){
+            return -1;
+        }
+
+        if(inicio.val == elemento){
+            removeInicio();
+        }
+
         Nodo aux = inicio;
-        while (aux.val != elemento){
+        while (aux.prox != null && aux.prox.val != elemento){
             aux = aux.prox;
         }
+
+        if(aux.prox == null){
+            return -1;
+        }
+
         int temp = aux.val;
         aux.prox = aux.prox.prox;
         tamanho--;
@@ -109,6 +116,7 @@ public class ListaEncadeada {
     }
 
     public void getLista(){
+        System.out.println();
         Nodo aux = inicio;
         for(int i = 0; i < tamanho; i++){
             System.out.print(aux.val + ", ");
@@ -118,15 +126,18 @@ public class ListaEncadeada {
     public void getElemento(int elemento){
         int count = 0;
         Nodo aux = inicio;
-        while (aux.val != elemento){
+        while (aux != null && aux.val != elemento){
             aux = aux.prox;
             count++;
         }
-        int result = aux.val;
-        System.out.println(result);
+        if(aux == null){
+            System.out.println("Elemento não encontrado na lista");
+        }
+        System.out.println();
+        System.out.println("O elemento " + elemento + " está na posição " + count);
     }
     public void getTamanhoLista(){
-        System.out.println(tamanho);
+        System.out.println("O tamanho da lista é " + tamanho);
     }
 
 }
