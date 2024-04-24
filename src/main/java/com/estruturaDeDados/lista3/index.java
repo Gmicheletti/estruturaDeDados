@@ -9,7 +9,7 @@ public class index {
         lista.getLista();
         lista.inserirFim(5);
         lista.inserirFim(6);
-        lista.inserirFim(7);
+
         lista.getLista();
         lista.inserirPosicao(1,2);
         lista.inserirPosicao(2,3);

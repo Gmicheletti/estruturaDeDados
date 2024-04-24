@@ -60,18 +60,26 @@ public class ListaEncadeada {
         return info;
     }
     public int removeFim(){
-        if(inicio == null){
+        if (inicio == null) {
             return -1;
-        }else{
-            Nodo aux = inicio;
-            while (aux.prox.prox != null){
-                aux = aux.prox.prox;
-            }
-            int temp = aux.val;
-            aux.prox = null;
+        }
+
+        if (inicio.prox == null) {
+            int temp = inicio.val;
+            inicio = null;
             tamanho--;
             return temp;
         }
+
+        Nodo aux = inicio;
+        while (aux.prox.prox != null) {
+            aux = aux.prox;
+        }
+
+        int temp = aux.prox.val;
+        aux.prox = null;
+        tamanho--;
+        return temp;
     }
     public int removePosicao(int index){
         if(index < 0 || index > tamanho || inicio == null){
