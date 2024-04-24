@@ -15,6 +15,8 @@ public class ListaEncadeadaSimples {
         nodo.prox = inicio;
         inicio = nodo;
         tamanho++;
+        System.out.println();
+        System.out.println("tamanho: " + tamanho);
     }
     public void inserirFim(int val){
         Nodo nodo = new Nodo();
@@ -31,6 +33,8 @@ public class ListaEncadeadaSimples {
             nodo.prox = null;
         }
         tamanho++;
+        System.out.println();
+        System.out.println("tamanho: " + tamanho);
     }
     public void inserirPosicao(int index, int val){
         if(index <= 0){
@@ -47,6 +51,8 @@ public class ListaEncadeadaSimples {
             nodo.prox = aux.prox;
             aux.prox = nodo;
             tamanho++;
+            System.out.println();
+            System.out.println("tamanho: " + tamanho);
         }
     }
 
@@ -104,10 +110,9 @@ public class ListaEncadeadaSimples {
 
     public void getLista(){
         Nodo aux = inicio;
-        System.out.println(aux.val);
-        for(int i = 0; i <= tamanho; i++){
+        for(int i = 0; i < tamanho; i++){
+            System.out.print(aux.val + ", ");
             aux = aux.prox;
-            System.out.println(aux.val);
         }
     }
     public void getElemento(int elemento){
