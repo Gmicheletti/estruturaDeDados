@@ -1,10 +1,10 @@
 package com.estruturaDeDados.lista3;
 
-public class ListaEncadeadaSimples {
+public class ListaEncadeada {
     Nodo inicio;
     int tamanho;
 
-    public ListaEncadeadaSimples(){
+    public ListaEncadeada(){
         inicio = null;
         tamanho = 0;
     }
@@ -43,7 +43,7 @@ public class ListaEncadeadaSimples {
             inserirFim(val);
         }else{
             Nodo aux = inicio;
-            for(int i = 0; i < index; i++){
+            for(int i = 0; i < index -1; i++){
                 aux = aux.prox;
             }
             Nodo nodo = new Nodo();
