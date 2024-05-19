@@ -1,0 +1,37 @@
+1. Faça um programa que carregue dois vetores com 10 posições. O primeiro vetor deverá conter o nome dos alunos de uma turma e o segundo suas respectivas notas. Após a leitura, calcule a média geral da turma e imprima o nome de todos os alunos com nota superior a média da turma.
+
+ 
+
+2. Faça um programa que leia 10 números inteiros e os armazene em um vetor. Ordene o vetor em ordem não decrescente e imprima-o.
+
+ 
+
+3. Faça um programa que leia um número x. Insira x na primeira posição do vetor real N[10]. Em cada posição subsequente (1 a 9) insira o próximo número par maior que o número na posição anterior.
+
+ 
+
+4. Faça um programa que leia um vetor inteiro N[100]. Imprima todas as posições que contém números entre 10 e 30 e os respectivos valores.
+
+ 
+
+5. Faça um programa que leia um vetor inteiro N[20]. Imprima o vetor na ordem inversa a digitada.
+
+ 
+
+6. Faça um programa que leia um vetor inteiro N[10]. Imprima em ordem não decrescente os números pares armazenados no vetor e em ordem não crescente os números ímpares.
+
+ 
+
+7. Faça um programa que leia uma matriz inteira M[10][20]. Ordene e imprima a matriz.
+
+ 
+
+8. Faça um programa que leia uma letra maiúscula representando a operação desejada (S = soma, M = média) sobre uma matriz inteira M[12][12] (a matriz deve ser preenchida com números aleatórios). Execute a operação indicada considerando apenas os números posicionados abaixo da diagonal principal (área verde na imagem abaixo). Imprima o resultado.
+
+ 
+
+9. Faça um programa que leia uma letra maiúscula representando a operação desejada (S = soma, M = média) sobre uma matriz inteira M[12][12] (a matriz deve ser preenchida com números aleatórios). Execute a operação indicada considerando apenas os números posicionados na área em verde na imagem abaixo. Imprima o resultado.
+
+ 
+
+10. Gere e imprima uma matriz M [4][4] com valores aleatórios entre 0- 9. Após isso determine o maior número da matriz e a sua posição (linha, coluna).
